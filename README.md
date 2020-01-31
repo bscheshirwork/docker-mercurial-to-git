@@ -67,17 +67,15 @@ Inside the <input> and <output> strings, all escape sequences understood by the 
 If the author mapping file does not contain a matching <input>, that author will be sent on to Git unmodified. 
 If all the usernames look fine, we won’t need this file at all. In this example, we want our file to look like this:
 ```sh
-mcedit /data/authors
-```
-```sh
-"bob"="Bob Jones <bob@company.com>"
+echo '"bob"="Bob Jones <bob@company.com>"
 "bob@localhost"="Bob Jones <bob@company.com>"
 "bob <bob@company.com>"="Bob Jones <bob@company.com>"
 "bob jones <bob <AT> company <DOT> com>"="Bob Jones <bob@company.com>"
+' > /data/authors
 ```
 The same kind of mapping file can be used to rename branches and tags when the Mercurial name is not allowed by Git.
 
->note: I can't see any reason to save this file outside the container. We can copy content of this file manually if needed.
+>note: I can't see any reason to save this file outside the container. We can copy/insert content of this file manually if needed.
 
 3.Work with convert tools
 
