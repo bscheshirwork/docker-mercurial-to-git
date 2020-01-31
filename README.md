@@ -83,7 +83,7 @@ The next step is to create our new Git repository, and run the export script:
 ```sh
 git init /data/git-repo
 cd /data/git-repo
-/data/fast-export/hg-fast-export.sh -r /data/hg-repo -A /data/authors
+bash /data/fast-export/hg-fast-export.sh -r /data/hg-repo -A /data/authors
 ```
 The -r flag tells hg-fast-export where to find the Mercurial repository we want to convert, 
 and the -A flag tells it where to find the author-mapping file (branch and tag mapping files are specified 
