@@ -2,7 +2,7 @@ version: '3.7'
 services:
   alpine:
     build: ./build
-#    image: bscheshir/hg-to-git:alpine:3.11
+#    image: bscheshir/hg-to-git:alpine3.11
     volumes:
       - ./git-repo:/data/git-repo
       - ./hg-repo:/data/hg-repo

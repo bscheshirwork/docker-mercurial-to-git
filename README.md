@@ -5,7 +5,7 @@ Environment for use hg-fast-export.sh without brutal install hg on your device
 ## Preparation:
 You can use this tool in two variants:
 
-### use docker image bscheshir/codeception:hg-to-git-alpine3.11 from docker hub:
+### use docker image bscheshir/codeception:hg-to-git:alpine3.11 from docker hub:
 
 Create your composition file
 ```sh
