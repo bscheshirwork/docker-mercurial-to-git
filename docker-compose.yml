@@ -1,0 +1,19 @@
+version: '3.7'
+services:
+  alpine:
+    build: ./build
+#    image: bscheshir/hg-to-git:alpine:3.11
+    volumes:
+      - ./git-repo:/data/git-repo
+      - ./hg-repo:/data/hg-repo
+#      - type: volume
+#        source: to-convert
+#        target: /data/hg-repo
+#        volume:
+#          nocopy: true # flag to disable copying of data from a container when a volume is created
+    environment:
+      TZ: Europe/Moscow
+#volumes: # for create external volume try next command (also can use sshfs):
+#  to-convert: # docker volume create --driver local --opt type=none --opt device=/media/user/device-name/hg-data --opt o=bind hg-data
+#    external: true
+#    name: hg-data
