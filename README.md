@@ -5,7 +5,7 @@ Environment for use hg-fast-export.sh without brutal install hg on your device
 ## Preparation:
 You can use this tool in two variants:
 
-### use docker image bscheshir/codeception:hg-to-git:alpine3.11 from docker hub:
+### use docker image bscheshir/hg-to-git:python2.7-alpine3.11 from docker hub:
 
 Create your composition file
 ```sh
@@ -14,7 +14,7 @@ cd docker-mercurial-to-git
 echo "version: '3.7'
 services:
   alpine:
-    image: bscheshir/hg-to-git:alpine3.11
+    image: bscheshir/hg-to-git:python2.7-alpine3.11
     volumes:
       - ./git-repo:/data/git-repo
       - ./hg-repo:/data/hg-repo
