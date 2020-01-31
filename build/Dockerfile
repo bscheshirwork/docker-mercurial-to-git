@@ -1,5 +1,6 @@
 FROM python:2.7-alpine3.11
 # docker build --pull --no-cache -t bscheshir/hg-to-git:python2.7-alpine3.11 -- ./build && docker push bscheshir/hg-to-git:python2.7-alpine3.11
+# docker build --pull -t bscheshir/hg-to-git:python2.7-alpine3.11 -- ./build
 MAINTAINER BSCheshir <bscheshir.work@gmail.com>
 
 RUN apk --update add \
@@ -8,6 +9,9 @@ RUN apk --update add \
         git-fast-import \
         bash \
         bash-completion
+RUN apk add --no-cache --virtual .build-deps gcc musl-dev \
+    && pip install mercurial \
+    && apk del .build-deps
 
 # Prepare host-volume working directory
 RUN mkdir -p /data
