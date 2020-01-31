@@ -5,7 +5,6 @@ MAINTAINER BSCheshir <bscheshir.work@gmail.com>
 RUN apk --update add \
         git \
         mercurial \
-        mc \
         bash \
         bash-completion
 
