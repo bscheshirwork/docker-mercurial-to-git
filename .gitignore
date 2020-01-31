@@ -19,5 +19,5 @@ Thumbs.db
 .env
 
 #data
-git-data
-hg-data
+git-repo
+hg-repo
