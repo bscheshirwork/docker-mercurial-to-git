@@ -43,6 +43,10 @@ cd hg-repo
 ```sh
 hg clone <remote repo URL> /data/hg-repo
 ```
+
+>note: if you have unnamed head you can add flag `--rev` for clone only specifying revision, exclude unnamed head.
+> hg clone <remote repo URL> /data/hg-repo --rev 123
+
 3.Work with authors (see instruction above) 
 ```sh
 cd /data/hg-repo
@@ -136,7 +140,13 @@ $ git shortlog -sn
    365  Joe Smith
 ```
 That’s pretty much all there is to it. All of the Mercurial tags have been converted to Git tags, and Mercurial branches and bookmarks have been converted to Git branches. 
+ 
+In this moment all files mark as "deleted".
+Finally set master branch to HEAD for fix it.
 
+```
+git checkout HEAD
+```
 
 4.Can see result in `git-data` outside of container or in `/data/git-data` inside of container
 
