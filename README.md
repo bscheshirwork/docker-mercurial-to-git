@@ -37,7 +37,7 @@ For both case we can use it same:
 >note: `git-repo` and `hg-repo` be create from `root` user on volume mapping phase
 ```sh
 docker-compose run --rm alpine bash
-cd hg
+cd hg-repo
 ```
 2.Download hg repo from container
 ```sh
