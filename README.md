@@ -34,7 +34,7 @@ For both case we can use it same:
 
 1.Run container and go inside 
 
-note: `git-repo` and `hg-repo` be create from `root` user on volume mapping phase
+>note: `git-repo` and `hg-repo` be create from `root` user on volume mapping phase
 ```sh
 docker-compose run --rm alpine bash
 cd hg
@@ -74,10 +74,10 @@ mcedit /data/authors
 "bob@localhost"="Bob Jones <bob@company.com>"
 "bob <bob@company.com>"="Bob Jones <bob@company.com>"
 "bob jones <bob <AT> company <DOT> com>"="Bob Jones <bob@company.com>"
-The same kind of mapping file can be used to rename branches and tags when the Mercurial name is not allowed by Git.
 ```
+The same kind of mapping file can be used to rename branches and tags when the Mercurial name is not allowed by Git.
 
-note: I can't see any reason to save this file outside the container. We can copy content of this file manually if needed.
+>note: I can't see any reason to save this file outside the container. We can copy content of this file manually if needed.
 
 3.Work with convert tools
 
