@@ -149,8 +149,8 @@ $ git push origin --all
 ```
 
 
-(migration to git EN)[https://git-scm.com/book/en/v2/Git-and-Other-Systems-Migrating-to-Git]
+[migration to git EN](https://git-scm.com/book/en/v2/Git-and-Other-Systems-Migrating-to-Git)
 
-(convert tool)[https://github.com/frej/fast-export]
+[convert tool](https://github.com/frej/fast-export)
 
-(migration to git RU)[https://git-scm.com/book/ru/v2/Git-%D0%B8-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D0%B5-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B-%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8F-%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D0%B9-%D0%9C%D0%B8%D0%B3%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D0%BD%D0%B0-Git]
+[migration to git RU](https://git-scm.com/book/ru/v2/Git-%D0%B8-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D0%B5-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B-%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8F-%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D0%B9-%D0%9C%D0%B8%D0%B3%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D0%BD%D0%B0-Git)
