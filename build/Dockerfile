@@ -1,7 +1,7 @@
-FROM python:2.7-alpine3.11
-# docker build --pull --no-cache -t bscheshir/hg-to-git:python2.7-alpine3.11 -- ./build && docker push bscheshir/hg-to-git:python2.7-alpine3.11
-# docker build --pull -t bscheshir/hg-to-git:python2.7-alpine3.11 -- ./build
-MAINTAINER BSCheshir <bscheshir.work@gmail.com>
+FROM python:3.9.18-alpine3.18
+# docker build --pull --no-cache -t bscheshir/hg-to-git:python3.9.18-alpine3.18 -- ./build && docker push bscheshir/hg-to-git:python3.9.18-alpine3.18
+# docker build --pull -t bscheshir/hg-to-git:python3.9.18-alpine3.18 -- ./build
+LABEL maintainer="BSCheshir <bscheshir.work@gmail.com>"
 
 RUN apk --update add \
         git \
